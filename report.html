@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report</title>
+    <link rel="icon" href="web_logo.png">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f5f7fa;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #6B73FF 0%, #000DFF 100%);
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+        
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        h2 {
+            font-size: 1.8rem;
+            margin: 2rem 0 1rem;
+            color: #2c3e50;
+            border-bottom: 2px solid #6B73FF;
+            padding-bottom: 0.5rem;
+        }
+        
+        h3 {
+            font-size: 1.4rem;
+            margin: 1.5rem 0 0.5rem;
+            color: #34495e;
+        }
+        
+        .project-info {
+            background-color: white;
+            border-radius: 8px;
+            padding: 2rem;
+            margin: 2rem 0;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        }
+        
+        .team-members {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin: 1rem 0;
+            flex-wrap: wrap;
+        }
+        
+        .member {
+            background-color: rgba(255, 255, 255, 0.2);
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-weight: 500;
+        }
+        
+        .abstract, .section {
+            background-color: white;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        }
+        
+        ul {
+            margin-left: 1.5rem;
+        }
+        
+        li {
+            margin-bottom: 0.5rem;
+        }
+        
+        .tech-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin: 1rem 0;
+        }
+        
+        .tech-item {
+            background-color: #e1e5f2;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            font-weight: 500;
+            color: #2c3e50;
+        }
+        
+        .features-list li {
+            margin-bottom: 1rem;
+            padding-left: 1rem;
+            border-left: 3px solid #6B73FF;
+        }
+        
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 2rem;
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            h2 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Digital Prescription Scanner and Medicine Analyzer</h1>
+            <p>An Intelligent System to Detect and Display Medicine Details from Doctor Prescriptions</p>
+            <div class="team-members">
+                <div class="member">Ankit (Team Leader)</div>
+                <div class="member">Mohit Gautam</div>
+                <div class="member">Shanu Raj</div>
+            </div>
+        </div>
+    </header>
+    
+    <main class="container">
+        <section class="project-info">
+            <h3>Submitted by: ChikitsAI</h3>
+            <p>B.Tech – Artificial Intelligence and Machine Learning (AIML)</p>
+            <p>World College of Technology and Management</p>
+            <p><strong>Submission Date:</strong> July 11, 2025</p>
+        </section>
+        
+        <section class="abstract">
+            <h2>Abstract</h2>
+            <p>This project presents a simple yet effective web-based system that allows users to upload medical prescriptions and extract medicine names using Optical Character Recognition (OCR). The system then analyzes these names to provide basic information such as uses, dosage, and warnings. Built using HTML, CSS, JavaScript, it demonstrates how digital tools can simplify healthcare interactions for patients.</p>
+        </section>
+        
+        <section class="section">
+            <h2>Introduction</h2>
+            <p>In today's digital healthcare landscape, patients often receive prescriptions that are either difficult to read or not well understood. This project addresses this gap by enabling users to upload images of prescriptions and get relevant medicine details instantly. The application is designed with accessibility and simplicity in mind, ensuring anyone with a basic device and internet access can use it.</p>
+        </section>
+        
+        <section class="section">
+            <h2>Problem Statement</h2>
+            <p>To develop a web-based tool where users can upload a prescription image, extract the text using OCR, identify the medicine names mentioned, and display their related information such as usage, dosage, and warnings. The system aims to improve health literacy and ensure patients understand their treatment.</p>
+        </section>
+        
+        <section class="section">
+            <h2>Objectives</h2>
+            <ul>
+                <li>Provide a simple UI to upload prescriptions in image format.</li>
+                <li>Use OCR to extract text from images using Tesseract.js.</li>
+                <li>Match extracted text with a predefined medicine database.</li>
+                <li>Display detailed medicine information clearly.</li>
+            </ul>
+        </section>
+        
+        <section class="section">
+            <h2>Technologies Used</h2>
+            <div class="tech-list">
+                <div class="tech-item">HTML</div>
+                <div class="tech-item">CSS</div>
+                <div class="tech-item">JavaScript</div>
+                <div class="tech-item">Tesseract.js</div>
+            </div>
+            <ul>
+                <li><strong>HTML</strong> – for structure of the webpage</li>
+                <li><strong>CSS</strong> – for styling and layout</li>
+                <li><strong>JavaScript</strong> – for interactivity and logic</li>
+                <li><strong>Tesseract.js</strong> – to implement OCR in browser</li>
+            </ul>
+        </section>
+        
+        <section class="section">
+            <h2>System Overview</h2>
+            <p>The application comprises a frontend where the user can upload an image file. JavaScript captures the file and uses the Tesseract.js library to perform OCR on the image. Extracted text is compared against a list of common medicines stored in the script. If matches are found, a result card is generated showing the medicine's name, uses, dosage, and warnings. Otherwise, an error message is shown.</p>
+        </section>
+        
+        <section class="section">
+            <h2>Key Features</h2>
+            <ul class="features-list">
+                <li><strong>Upload Prescription Button</strong> – Users can upload image files through a clean UI.</li>
+                <li><strong>Text Extraction</strong> – Tesseract.js scans the prescription for text content.</li>
+                <li><strong>Medicine Detection</strong> – Matches words from the text with known medicines.</li>
+                <li><strong>Result Display</strong> – Detailed medicine cards with name, uses, dosage, and warnings.</li>
+                <li><strong>Responsive Layout</strong> – Visually styled using CSS for user-friendly experience.</li>
+            </ul>
+        </section>
+        
+        <section class="section">
+            <h2>Challenges Faced</h2>
+            <ul>
+                <li>Handling OCR inaccuracies due to poor image quality or handwriting.</li>
+                <li>Ensuring responsive design across various screen sizes.</li>
+                <li>Mapping only relevant medicine names while filtering noise in OCR results.</li>
+            </ul>
+        </section>
+        
+        <section class="section">
+            <h2>Learning Outcomes</h2>
+            <p>This project helped strengthen knowledge in core frontend development, understanding how OCR works with JavaScript, and designing real-world healthcare utility tools. It also highlighted the importance of accessibility and user experience design.</p>
+        </section>
+        
+        <section class="section">
+            <h2>Conclusion</h2>
+            <p>The digital prescription scanner offers a convenient way for users to interpret handwritten or printed prescriptions. While currently limited to a fixed set of medicines, it demonstrates the potential for building intuitive, browser-based healthcare tools that can educate and empower users about the medication they are prescribed.</p>
+        </section>
+        
+        <section class="section">
+            <h2>Future Scope</h2>
+            <ul>
+                <li>Expand medicine database to cover more drugs.</li>
+                <li>Enable OCR tuning for different languages and fonts.</li>
+                <li>Store history of scanned results securely for user review.</li>
+                <li>Improve matching accuracy with fuzzy search or NLP methods.</li>
+                <li>Provide the location of the nearest medicine shop.</li>
+            </ul>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 ChikitsAI | World College of Technology and Management</p>
+        </div>
+    </footer>
+</body>
+</html>

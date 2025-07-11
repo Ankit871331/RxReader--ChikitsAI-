@@ -1,0 +1,638 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+
+body{
+
+    background-color: rgb(212, 236, 255);
+     font-family: "Roboto", sans-serif;
+
+    
+}
+
+:root{
+    --bodyColor:rgb(227, 241, 251);
+    --secondaryCorot: rgb(181, 233, 246);
+    --boxShadow:0px 3px  6px blue;
+    --margin: 0rem 1rem;
+    --borderRadius: 10px;
+}
+
+
+.header_div{
+    width: 99vw;
+    height: 10vh;
+    background-color:var(--secondaryCorot);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    color: #0056b3;
+    box-shadow: 0px 1px 2px  rgb(87, 154, 242);
+    padding: 0px 15px;
+
+}
+.header_div p{
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    
+}
+.chikitsAI_logo img{
+    width: 50px;
+}
+
+.login_singupBtn button{
+    font-size: 1.2rem;
+    padding: 7px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    
+}
+
+.login_singupBtn button:hover{
+   background-color: rgb(66, 177, 221);
+   color: white;
+   box-shadow: 0px 1px 8px 1px rgb(46, 171, 225);
+   
+
+}
+
+
+
+
+.hero_section{
+    height: 50vh;
+    margin-top: 5rem;
+    color:  #023c7b;
+}
+
+
+.up{
+    display: flex;
+    background-color:var(--secondaryCorot);
+    height: 80vh;
+    padding: 50px 250px;
+    margin: var(--margin);
+    border-radius: var(--borderRadius);
+    box-shadow: 0px 1px 2px rgb(87, 154, 242);
+  }
+
+
+.up_left{
+    width: 50vw;
+
+}
+
+.hero_heading{
+    font-size: 2.5rem;
+    line-height: 5rem;
+    letter-spacing: 0.2rem;
+}
+
+
+.up_right{
+    position: absolute;
+    left: 52rem;
+    top:6.3rem
+}
+
+.up_right img{
+    width: 28rem;
+}
+
+.hero_pera{
+    position: relative;
+    width: 90%;
+    font-size: 1.2rem;
+    margin-top: 2.5rem;
+    color: rgb(98, 112, 116);
+}
+
+
+.try_it{
+    margin-top: 2.3rem;
+}
+
+.try_it button{
+    padding: 20px 70px;
+    font-size: 2rem;
+    border-radius: 40px;
+    font-weight: bold;
+    transition: all 0.4s ease;
+    border-color: rgb(8, 82, 128);
+}
+
+.try_it button:hover{
+   background-color: rgb(66, 177, 221);
+   color: white;
+   box-shadow: 0px 1px 8px 1px rgb(46, 171, 225);
+   transform: scale(1.05);
+}
+.down{
+    margin: 1rem 1rem;
+    background-color: var(--secondaryCorot);
+    border-radius: var(--borderRadius);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    box-shadow: 0px 1px 2px rgb(87, 154, 242);
+    
+}
+
+.down_img{
+    display: flex;
+    margin-top: 2rem;
+    gap: 2rem;
+   height: 40vh;
+   align-items: center;
+   width: 85%;
+   justify-content: space-evenly;
+   
+}
+.one, .two, .three{
+    width: 25rem;
+    height: 40vh;
+    text-align: center;
+     box-shadow: var(--boxShadow);
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+    justify-content: space-evenly;
+     border-radius: var(--borderRadius);
+     background-color:  #a3e3f4;
+     transition: all 0.5s ease;
+     font-weight: bold;
+}
+
+
+.one:hover, .two:hover, .three:hover{
+    transform: scale(1.05);
+}
+.one>p, .two >p, .three >p{
+   font-size: 1.2rem;
+
+}
+.pointing{
+    width: 30rem;
+    
+}
+
+.painding_div{
+    position: absolute;
+    left: 33rem;
+    z-index: 2;
+   
+}
+
+.fileUplodeBtn_div{
+    padding-top: 20.7rem;
+}
+
+#fileUplodeBtn{
+    padding: 80px 110px;
+    font-size: 3rem;
+    font-weight: bold;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    
+}
+#fileUplodeBtn:hover{
+    background-color: rgb(66, 177, 221);
+   color: white;
+   box-shadow: 0px 1px 8px 1px rgb(46, 171, 225);
+   transform: scale(1.02);
+   position: relative;
+   z-index: 1;
+    
+}
+
+#fileUplodeBtn>i{
+    font-size: 1rem;
+    padding-right:3.2rem ;
+}
+
+.trick{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    width: 40vw;
+    object-fit: contain;
+    height: 100%;
+    font-size: 2rem;
+}
+
+
+img{
+    cursor: pointer;
+}
+
+#prescUplodeArea{
+    width: 100%;
+    height: 100%;
+}
+.container{
+    display: flex;
+    height: 95vh;
+    justify-content: center;
+    width: 99vw;
+    margin-top: 48.1rem;
+    background-color: var(--secondaryCorot);
+    box-shadow: 0px 1px 2px  rgb(87, 154, 242);
+}
+.medicine-card>h3{
+    font-size: 3rem ;
+}
+
+#result{
+    max-height: 1000vh;
+    overflow-x: scroll;
+}
+
+
+.medicine-card{
+    box-shadow: 6px 4px 10px black;
+    text-align: center;
+    padding-top: 7rem;
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    height: 400px;
+    width: 500px;
+    background-color: rgb(211, 250, 255);
+    border-radius: 10px;
+}
+
+.medicine-card>p{
+    text-align: start;
+    margin-left: 4rem;
+    line-height: 30px;
+}
+
+.result-header{
+    font-size: 4rem;
+    font-weight: bold;
+    position: fixed;
+    text-align: center;
+    width: 31.5rem;
+    background-color: rgb(208, 200, 200);
+   
+}
+
+.details-h{
+    font-size: 1.7rem;
+}
+
+
+
+
+button{
+    cursor: pointer;
+}
+
+
+
+.last{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 99vw;
+    gap: 3rem;
+
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+
+.footer-content{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 40px;
+    width: 99vw;
+    height: 10vw;
+}
+.footer-content p{
+    font-size: 1rem;
+    
+}
+
+.footer-content li, p, i{
+    margin-top: 0.6rem;
+}
+.footer-section h3{
+    font-size: 1.3rem;
+    
+}
+
+
+
+.footer-section i{
+    font-size: 1.7rem;
+}
+
+.footer-content li, .footer-content li>a{
+    list-style: none;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    color: white;
+}
+
+.footer-content li>a:hover{
+    color: blue;
+    border-bottom: 2px solid blue;
+}
+
+.footer-content i{
+    color: white;
+    margin-right: 1rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Media Queries for Responsive Design */
+
+/* Large screens (max-width: 1200px) */
+@media only screen and (max-width: 1200px) {
+    .up {
+        padding: 50px 150px;
+    }
+    
+    .up_right {
+        left: 45rem;
+    }
+    
+    .up_right img {
+        width: 24rem;
+    }
+    
+    .hero_heading {
+        font-size: 2.2rem;
+        line-height: 4rem;
+    }
+    
+    .one, .two, .three {
+        width: 22rem;
+    }
+}
+
+/* Medium screens (max-width: 992px) */
+@media only screen and (max-width: 992px) {
+    .up {
+        padding: 50px 80px;
+        flex-direction: column;
+        height: auto;
+    }
+    
+    .up_left {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .up_right {
+        position: static;
+        margin-top: 2rem;
+    }
+    
+    .up_right img {
+        width: 20rem;
+    }
+    
+    .hero_pera {
+        width: 100%;
+        text-align: center;
+    }
+    .down h2{
+        margin-top: -8rem;
+        margin-bottom: 2rem;
+    }
+    .down_img {
+        flex-direction: column;
+        margin-top: -1rem;
+    }
+    
+    .one, .two, .three {
+        width: 80%;
+        padding: 1.5rem 0;
+    }
+    .trick {
+        width: 80%;
+        font-size: 1.5rem;
+    }
+    
+    .pointing {
+        width: 20rem;
+    }
+    
+    .painding_div {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
+    #fileUplodeBtn {
+        padding: 60px 90px;
+        font-size: 2.5rem;
+    }
+    
+    .medicine-card {
+        width: 90%;
+    }
+    
+    .result-header {
+        width: 90%;
+        font-size: 3rem;
+    }
+}
+
+/* Small screens (max-width: 768px) */
+@media only screen and (max-width: 768px) {
+    .header_div p {
+        font-size: 1.5rem;
+    }
+    
+    .chikitsAI_logo img {
+        width: 40px;
+    }
+    
+    .login_singupBtn button {
+        font-size: 1rem;
+        padding: 5px 15px;
+    }
+    
+    .header_details > div {
+        width: 80vw;
+    }
+    
+    .up {
+        padding: 30px 40px;
+    }
+    
+    .hero_heading {
+        font-size: 1.8rem;
+        line-height: 3rem;
+        letter-spacing: 0.1rem;
+    }
+    
+    .hero_pera {
+        font-size: 1rem;
+    }
+    
+    .try_it button {
+        padding: 15px 50px;
+        font-size: 1.5rem;
+    }
+    
+    .footer-content {
+        flex-direction: column;
+        height: auto;
+        gap: 1.5rem;
+    }
+    
+    .footer-section {
+        margin-bottom: 1rem;
+    }
+    
+    #fileUplodeBtn {
+        padding: 40px 60px;
+        font-size: 2rem;
+    }
+    
+    .result-header {
+        font-size: 2.5rem;
+    }
+    
+    .medicine-card > h3 {
+        font-size: 2rem;
+    }
+    
+    .medicine-card > p {
+        margin-left: 2rem;
+        font-size: 1rem;
+    }
+}
+
+/* Extra small screens (max-width: 576px) */
+@media only screen and (max-width: 576px) {
+    .header_div p {
+        font-size: 1.2rem;
+    }
+    
+    .chikitsAI_logo img {
+        width: 30px;
+    }
+    
+    .up {
+        padding: 20px 25px;
+    }
+    
+    .hero_heading {
+        font-size: 1.5rem;
+        line-height: 2.5rem;
+    }
+    
+    .try_it button {
+        padding: 10px 30px;
+        font-size: 1.2rem;
+    }
+    
+    .one > p, .two > p, .three > p {
+        font-size: 1rem;
+    }
+    
+    #fileUplodeBtn {
+        padding: 30px 40px;
+        font-size: 1.5rem;
+    }
+    
+    .result-header {
+        font-size: 2rem;
+    }
+    
+    .medicine-card {
+        padding-top: 5rem;
+        height: auto;
+    }
+    
+    .details-h {
+        font-size: 1.3rem;
+    }
+
+}
+
+/* Very small screens (max-width: 400px) */
+@media only screen and (max-width: 400px) {
+    .header_div {
+        justify-content: space-around;
+    }
+    
+
+    
+    .up_right img {
+        width: 15rem;
+    }
+    
+    .hero_heading {
+        font-size: 1.3rem;
+    }
+    
+    .try_it button {
+        padding: 8px 20px;
+        font-size: 1rem;
+    }
+    
+    #fileUplodeBtn {
+        padding: 20px 30px;
+        font-size: 1.2rem;
+    }
+    
+    .result-header {
+        font-size: 1.5rem;
+    }
+    
+    .medicine-card > h3 {
+        font-size: 1.5rem;
+    }
+}           
+
+
+
+@media (max-width:994px) {
+    .container{
+        margin-top: 79rem;
+    }
+
+    .fileUplodeBtn_div{
+    padding-top: 13.9rem;
+}
+
+    .down{
+        height: 50rem;
+    }
+    .down_img{
+        margin-bottom: 20rem;
+    }
+}

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RxReader-ChikitsAI</title>
+    <link rel="icon" href="web_logo.png">
+    <script src="https://cdn.jsdelivr.net/npm/tesseract.js@4/dist/tesseract.min.js"></script>
+    <link rel="stylesheet" href="project.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="header">
+        <div class="header_div">
+            <div class="chikitsAI_logo">
+            <img src="chikitsAI_logo.png" alt="">
+            
+        </div>
+        <div><p>RxReader</p></div>
+        <div class="login_singupBtn"><button>Login / SignUp</button></div>
+       
+        
+    </div>
+     <!-- <div class="header_details">
+        <div>
+            <span>Home</span>
+            <span>About Us</span>
+            <span>Doc</span>
+            <span>Contact Us</span>
+            </div>
+        </div> -->
+    </div>
+
+    <div class="hero_section">
+        <div class="up"> 
+            <div class="up_left">
+            <div class="hero_heading"><h1>RxReader - Our First Digital Prescription Assistant</h1></div>
+            <div class="hero_pera"><p>Upload your prescription to get complete medicine details, usage instructions, and directions to the nearest medical store — all powered by ChikitsAI.</p>
+            <div class="try_it"><button onclick="window.location.href='#footer'">Try it</button></div>
+            </div>
+            </div>
+            <div class="up_right"><img src="doctor.png" alt=""></div>
+    </div>
+        <div class="down">
+        <h2>How to use it</h2>
+        <div class="down_img">
+            <div class="one"><img src="one.png" alt=""><p>Take your prescripton</p></div>
+        <div class="two"><img src="two.png" alt=""><p>Upload you prescription on "UPLOAD PRESCRIPTION" button</p></div>
+        <div class="three"><img src="three.png" alt=""><p>Hurray! your all medicine details ready</p></div>
+        </div>
+        </div>
+    </div>
+
+    <div class="container" id="footer" >
+    <main >
+        <div id="prescUplodeArea">
+
+            <input type="file" name="file" onchange="readText(this.files[0])" id="uplodeFile" style="display: none;">
+
+            <div class="painding_div">
+            <img  class="pointing" src="pointing.png" alt="">
+            
+            </div>
+            <div class="fileUplodeBtn_div">
+            <button id="fileUplodeBtn">
+                <i  class="fa-solid fa-upload" style="font-size: 3rem;"></i>UPLOAD  PRESCRIPTION</button>
+            </div>
+        </div>
+    </main>
+<div style="display: none;">
+    <button id="analyse" style="margin-top: 4rem; box-shadow: 6px 4px 10px black; display: none; font-size: 2rem; padding: 20px 50px;border-radius: 20px; width: 20%;">Analyze
+    </button>
+
+    </div>
+
+    <footer id="result">
+        <div id="result-cards"></div>
+    </footer>
+
+    </div>
+
+
+    <div class="last">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>Email: ChikitsAI@gmail.com.com</p>
+                <p>Phone: +91 3232323232</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#features">About Us</a></li>
+                    <li><a href="report.html">Report</a></li>
+                    <li><a href="https://in.linkedin.com/in/ankit-0b907a2a5">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="https://in.linkedin.com/in/ankit-0b907a2a5"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 RxReader launched by ChikitsAI. All rights reserved.</p>
+        </div>
+    </div>
+
+</body>
+<script src="project.js"></script>
+</html>
+

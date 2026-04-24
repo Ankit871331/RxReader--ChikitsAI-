@@ -1,20 +1,64 @@
+# 🧠 ChikitsAI – Rx Reader
 
-<img width="1919" height="920" alt="image" src="https://github.com/user-attachments/assets/5dec93cd-d96b-4dfe-ba94-b3a6619c3085" />
+🔗 Live Demo: https://chikits-ai.netlify.app/
 
+🖼️ Project Preview:  
+![ChikitsAI Screenshot](https://chikits-ai.netlify.app/preview.png)
 
+---
 
-💊 RxReader – ChikitsAI
+## About the Project
 
-RxReader is a simple and effective web application that provides medicine details by uploading a prescription. Built by the team ChikitsAI, this tool helps in quickly extracting and displaying medicine names from an image or file-based prescription.
+ChikitsAI Rx Reader is a simple tool I built to help people understand handwritten medical prescriptions.  
+Many times prescriptions are hard to read, so this project tries to convert them into clear, readable text using OCR.
 
-🚀 How to Use
-Prepare your prescription in the form of a photo, PDF, or image file.
+It’s not a medical replacement, just a helper to make things easier for users.
 
-Click on the UPLOAD PRESCRIPTION button.
+---
 
-Select and upload your prescription file.
+## What it does
 
-The app will display all the medicine details extracted from your prescription.
+- Upload or capture a prescription image  
+- Extracts text using OCR (Tesseract.js)  
+- Cleans and formats the extracted text  
+- Shows readable output in a simple UI  
+- Reminds users to consult a doctor or pharmacist  
 
+---
 
-<img width="1912" height="970" alt="image" src="https://github.com/user-attachments/assets/a5cda84b-8e32-430c-8030-aaceac1bcaa8" />
+## Tech Stack
+
+- HTML  
+- CSS  
+- JavaScript  
+- Tesseract.js  
+- Netlify (deployment)  
+
+---
+
+## Why I built this
+
+I wanted to build something practical that solves a real-world problem.  
+Reading prescriptions is difficult for many people, so I combined OCR with frontend development to make a basic solution for it.
+
+---
+
+## Important Note
+
+This tool is only for learning and informational purposes.  
+It should not be used as a medical decision system.
+
+---
+
+## Future Improvements
+
+- Better AI-based medicine recognition  
+- Drug information database integration  
+- Mobile app version  
+- Multi-language support  
+
+---
+
+## Live Link
+
+👉 https://chikits-ai.netlify.app/

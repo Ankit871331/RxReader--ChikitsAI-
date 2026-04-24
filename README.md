@@ -3,7 +3,7 @@
 🔗 Live Demo: https://chikits-ai.netlify.app/
 
 🖼️ Project Preview:  
-![ChikitsAI Screenshot](https://chikits-ai.netlify.app/preview.png)
+![RxReader--ChikitsAI-/review.png](chikitsAI_logo.png)
 
 ---
 

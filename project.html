@@ -2,115 +2,104 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RxReader-ChikitsAI</title>
-    <link rel="icon" href="web_logo.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>ChikitsAI | RxReader - Neural Health Intelligence</title>
+    
+    <!-- Premium Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <!-- Tesseract OCR -->
     <script src="https://cdn.jsdelivr.net/npm/tesseract.js@4/dist/tesseract.min.js"></script>
+
+<link rel="icon" type="image/png" href="chikitsAI_logo.png">
+
     <link rel="stylesheet" href="project.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
 </head>
-<body>
-    <div class="header">
-        <div class="header_div">
-            <div class="chikitsAI_logo">
-            <img src="chikitsAI_logo.png" alt="">
-            
+<body class="dark-mode">
+
+    <nav>
+        <div class="logo">
+            <img src="chikitsAI_logo.png" alt="logo" style="width: 40px; height: 40px; margin-right: 10px;">
+            Chikits<span>AI</span>
         </div>
-        <div><p>RxReader</p></div>
-        <div class="login_singupBtn"><button>Login / SignUp</button></div>
-       
-        
-    </div>
-     <!-- <div class="header_details">
-        <div>
-            <span>Home</span>
-            <span>About Us</span>
-            <span>Doc</span>
-            <span>Contact Us</span>
-            </div>
-        </div> -->
-    </div>
+        <button class="theme-toggle" id="theme-switch">
+            <i class="fa-solid fa-moon"></i>
+            <span>Night Mode</span>
+        </button>
+    </nav>
 
-    <div class="hero_section">
-        <div class="up"> 
-            <div class="up_left">
-            <div class="hero_heading"><h1>RxReader - Our First Digital Prescription Assistant</h1></div>
-            <div class="hero_pera"><p>Upload your prescription to get complete medicine details, usage instructions, and directions to the nearest medical store — all powered by ChikitsAI.</p>
-            <div class="try_it"><button onclick="window.location.href='#footer'">Try it</button></div>
-            </div>
-            </div>
-            <div class="up_right"><img src="doctor.png" alt=""></div>
-    </div>
-        <div class="down">
-        <h2>How to use it</h2>
-        <div class="down_img">
-            <div class="one"><img src="one.png" alt=""><p>Take your prescripton</p></div>
-        <div class="two"><img src="two.png" alt=""><p>Upload you prescription on "UPLOAD PRESCRIPTION" button</p></div>
-        <div class="three"><img src="three.png" alt=""><p>Hurray! your all medicine details ready</p></div>
-        </div>
-        </div>
-    </div>
+    <header>
+        <div class="hero-badge">OFFICIAL INTEL INNOVATION PROJECT</div>
+        <h1>Healing Hand, <br> Neural Heart.</h1>
+        <p>RxReader is more than just a tool; it's your digital recovery partner. We decode complex medical prescriptions into simple, life-saving knowledge instantly.</p>
+        <a href="#scan-section" class="btn-cta">Analyze My Prescription</a>
+    </header>
 
-    <div class="container" id="footer" >
-    <main >
-        <div id="prescUplodeArea">
-
-            <input type="file" name="file" onchange="readText(this.files[0])" id="uplodeFile" style="display: none;">
-
-            <div class="painding_div">
-            <img  class="pointing" src="pointing.png" alt="">
-            
+    <section class="section" id="benefits">
+        <div class="bento-grid">
+            <div class="bento-card">
+                <i class="fa-solid fa-hand-holding-medical"></i>
+                <h3>Empathetic AI</h3>
+                <p>Designed to put patient safety first, highlighting risks often missed by the human eye.</p>
             </div>
-            <div class="fileUplodeBtn_div">
-            <button id="fileUplodeBtn">
-                <i  class="fa-solid fa-upload" style="font-size: 3rem;"></i>UPLOAD  PRESCRIPTION</button>
+            <div class="bento-card">
+                <i class="fa-solid fa-bolt-lightning"></i>
+                <h3>Neural Precision</h3>
+                <p>Powered by Tesseract 4.0 to read even the most challenging handwriting scripts.</p>
+            </div>
+            <div class="bento-card">
+                <i class="fa-solid fa-universal-access"></i>
+                <h3>Human Centric</h3>
+                <p>Fully responsive UI designed to work seamlessly on all devices, from rural to urban.</p>
             </div>
         </div>
-    </main>
-<div style="display: none;">
-    <button id="analyse" style="margin-top: 4rem; box-shadow: 6px 4px 10px black; display: none; font-size: 2rem; padding: 20px 50px;border-radius: 20px; width: 20%;">Analyze
-    </button>
+    </section>
 
-    </div>
+    <section class="section" id="scan-section">
+        <div style="text-align: center; margin-bottom: 40px;">
+            <h2 style="font-size: 2.2rem; margin-bottom: 10px;">The Analysis Engine</h2>
+            <p style="color: var(--text-dim);">Place your prescription under light and capture it clearly.</p>
+        </div>
 
-    <footer id="result">
-        <div id="result-cards"></div>
+        <div class="scanner-container">
+            <div class="scan-anim-line" id="scan-line"></div>
+            <div class="drop-zone" id="drop-zone" onclick="document.getElementById('file-input').click()">
+                <div id="upload-placeholder">
+                    <i class="fa-solid fa-camera-retro" style="font-size: 3.5rem; color: var(--glow); margin-bottom: 15px;"></i>
+                    <h3>Capture Photo</h3>
+                    <p style="color: var(--text-dim); margin-top: 8px;">Tap to browse or drop files here</p>
+                </div>
+                <img id="image-preview" style="max-width: 100%; max-height: 100%; display: none; border-radius: 15px; object-fit: contain;">
+                <input type="file" id="file-input" hidden accept="image/*">
+            </div>
+
+            <button id="analyze-btn">EXECUTE NEURAL SCAN</button>
+
+            <div id="results-grid"></div>
+        </div>
+
+        <div class="pharmacist-tip">
+            <i class="fa-solid fa-circle-info"></i>
+            <div style="flex: 1;">
+                <h4 style="margin-bottom: 5px; font-size: 1.2rem;">ChikitsAI Safety Tip</h4>
+                <p>Always double-check medicine names with your pharmacist. AI is a powerful assistant, but the human final touch is essential for your health.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div style="margin-bottom: 20px; font-size: 1.5rem; display: flex; justify-content: center; gap: 20px;">
+            <a href="https://www.linkedin.com/in/ankit-0b907a2a5/" style="color: var(--text-dim);"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/Ankit871331" style="color: var(--text-dim);"><i class="fab fa-github"></i></a>
+            <a href="#" style="color: var(--text-dim);"><i class="fa-solid fa-briefcase"></i></a>
+        </div>
+        <p>&copy; 2026 RxReader - ChikitsAI Project for Intel. All Rights Reserved.</p>
+        <p style="font-size: 0.75rem; margin-top: 15px; opacity: 0.6;">This tool provides information based on scanned text. Consult a doctor before making medical decisions.</p>
     </footer>
 
-    </div>
-
-
-    <div class="last">
-        <div class="footer-content">
-            <div class="footer-section">
-                <h3>Contact Us</h3>
-                <p>Email: ChikitsAI@gmail.com.com</p>
-                <p>Phone: +91 3232323232</p>
-            </div>
-            <div class="footer-section">
-                <h3>Quick Links</h3>
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#features">About Us</a></li>
-                    <li><a href="report.html">Report</a></li>
-                    <li><a href="https://in.linkedin.com/in/ankit-0b907a2a5">Contact Us</a></li>
-                </ul>
-            </div>
-            <div class="footer-section">
-                <h3>Follow Us</h3>
-                <div class="social-links">
-                    <a href="#"><i class="fab fa-facebook"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="https://in.linkedin.com/in/ankit-0b907a2a5"><i class="fab fa-linkedin"></i></a>
-                </div>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p>&copy; 2025 RxReader launched by ChikitsAI. All rights reserved.</p>
-        </div>
-    </div>
-
-</body>
 <script src="project.js"></script>
+</body>
 </html>
-

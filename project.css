@@ -1,638 +1,171 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
-}
 
-
-body{
-
-    background-color: rgb(212, 236, 255);
-     font-family: "Roboto", sans-serif;
-
-    
-}
-
-:root{
-    --bodyColor:rgb(227, 241, 251);
-    --secondaryCorot: rgb(181, 233, 246);
-    --boxShadow:0px 3px  6px blue;
-    --margin: 0rem 1rem;
-    --borderRadius: 10px;
-}
-
-
-.header_div{
-    width: 99vw;
-    height: 10vh;
-    background-color:var(--secondaryCorot);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 3;
-    color: #0056b3;
-    box-shadow: 0px 1px 2px  rgb(87, 154, 242);
-    padding: 0px 15px;
-
-}
-.header_div p{
-    font-size: 2rem;
-    font-weight: bold;
-    text-align: center;
-    
-}
-.chikitsAI_logo img{
-    width: 50px;
-}
-
-.login_singupBtn button{
-    font-size: 1.2rem;
-    padding: 7px 20px;
-    border-radius: 20px;
-    cursor: pointer;
-    transition: all 0.4s ease;
-    
-}
-
-.login_singupBtn button:hover{
-   background-color: rgb(66, 177, 221);
-   color: white;
-   box-shadow: 0px 1px 8px 1px rgb(46, 171, 225);
-   
-
-}
-
-
-
-
-.hero_section{
-    height: 50vh;
-    margin-top: 5rem;
-    color:  #023c7b;
-}
-
-
-.up{
-    display: flex;
-    background-color:var(--secondaryCorot);
-    height: 80vh;
-    padding: 50px 250px;
-    margin: var(--margin);
-    border-radius: var(--borderRadius);
-    box-shadow: 0px 1px 2px rgb(87, 154, 242);
-  }
-
-
-.up_left{
-    width: 50vw;
-
-}
-
-.hero_heading{
-    font-size: 2.5rem;
-    line-height: 5rem;
-    letter-spacing: 0.2rem;
-}
-
-
-.up_right{
-    position: absolute;
-    left: 52rem;
-    top:6.3rem
-}
-
-.up_right img{
-    width: 28rem;
-}
-
-.hero_pera{
-    position: relative;
-    width: 90%;
-    font-size: 1.2rem;
-    margin-top: 2.5rem;
-    color: rgb(98, 112, 116);
-}
-
-
-.try_it{
-    margin-top: 2.3rem;
-}
-
-.try_it button{
-    padding: 20px 70px;
-    font-size: 2rem;
-    border-radius: 40px;
-    font-weight: bold;
-    transition: all 0.4s ease;
-    border-color: rgb(8, 82, 128);
-}
-
-.try_it button:hover{
-   background-color: rgb(66, 177, 221);
-   color: white;
-   box-shadow: 0px 1px 8px 1px rgb(46, 171, 225);
-   transform: scale(1.05);
-}
-.down{
-    margin: 1rem 1rem;
-    background-color: var(--secondaryCorot);
-    border-radius: var(--borderRadius);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 70vh;
-    box-shadow: 0px 1px 2px rgb(87, 154, 242);
-    
-}
-
-.down_img{
-    display: flex;
-    margin-top: 2rem;
-    gap: 2rem;
-   height: 40vh;
-   align-items: center;
-   width: 85%;
-   justify-content: space-evenly;
-   
-}
-.one, .two, .three{
-    width: 25rem;
-    height: 40vh;
-    text-align: center;
-     box-shadow: var(--boxShadow);
-     display: flex;
-     flex-direction: column;
-     align-items: center;
-    justify-content: space-evenly;
-     border-radius: var(--borderRadius);
-     background-color:  #a3e3f4;
-     transition: all 0.5s ease;
-     font-weight: bold;
-}
-
-
-.one:hover, .two:hover, .three:hover{
-    transform: scale(1.05);
-}
-.one>p, .two >p, .three >p{
-   font-size: 1.2rem;
-
-}
-.pointing{
-    width: 30rem;
-    
-}
-
-.painding_div{
-    position: absolute;
-    left: 33rem;
-    z-index: 2;
-   
-}
-
-.fileUplodeBtn_div{
-    padding-top: 20.7rem;
-}
-
-#fileUplodeBtn{
-    padding: 80px 110px;
-    font-size: 3rem;
-    font-weight: bold;
-    border-radius: 50px;
-    transition: all 0.3s ease;
-    
-}
-#fileUplodeBtn:hover{
-    background-color: rgb(66, 177, 221);
-   color: white;
-   box-shadow: 0px 1px 8px 1px rgb(46, 171, 225);
-   transform: scale(1.02);
-   position: relative;
-   z-index: 1;
-    
-}
-
-#fileUplodeBtn>i{
-    font-size: 1rem;
-    padding-right:3.2rem ;
-}
-
-.trick{
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    align-items: center;
-    justify-content: center;
-    width: 40vw;
-    object-fit: contain;
-    height: 100%;
-    font-size: 2rem;
-}
-
-
-img{
-    cursor: pointer;
-}
-
-#prescUplodeArea{
-    width: 100%;
-    height: 100%;
-}
-.container{
-    display: flex;
-    height: 95vh;
-    justify-content: center;
-    width: 99vw;
-    margin-top: 48.1rem;
-    background-color: var(--secondaryCorot);
-    box-shadow: 0px 1px 2px  rgb(87, 154, 242);
-}
-.medicine-card>h3{
-    font-size: 3rem ;
-}
-
-#result{
-    max-height: 1000vh;
-    overflow-x: scroll;
-}
-
-
-.medicine-card{
-    box-shadow: 6px 4px 10px black;
-    text-align: center;
-    padding-top: 7rem;
-    font-size: 1.2rem;
-    margin-bottom: 2rem;
-    height: 400px;
-    width: 500px;
-    background-color: rgb(211, 250, 255);
-    border-radius: 10px;
-}
-
-.medicine-card>p{
-    text-align: start;
-    margin-left: 4rem;
-    line-height: 30px;
-}
-
-.result-header{
-    font-size: 4rem;
-    font-weight: bold;
-    position: fixed;
-    text-align: center;
-    width: 31.5rem;
-    background-color: rgb(208, 200, 200);
-   
-}
-
-.details-h{
-    font-size: 1.7rem;
-}
-
-
-
-
-button{
-    cursor: pointer;
-}
-
-
-
-.last{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 99vw;
-    gap: 3rem;
-
-    background-color: rgb(0, 0, 0);
-    color: white;
-}
-
-.footer-content{
-    display: flex;
-    justify-content: space-between;
-    padding: 30px 40px;
-    width: 99vw;
-    height: 10vw;
-}
-.footer-content p{
-    font-size: 1rem;
-    
-}
-
-.footer-content li, p, i{
-    margin-top: 0.6rem;
-}
-.footer-section h3{
-    font-size: 1.3rem;
-    
-}
-
-
-
-.footer-section i{
-    font-size: 1.7rem;
-}
-
-.footer-content li, .footer-content li>a{
-    list-style: none;
-    text-decoration: none;
-    transition: all 0.3s ease;
-    color: white;
-}
-
-.footer-content li>a:hover{
-    color: blue;
-    border-bottom: 2px solid blue;
-}
-
-.footer-content i{
-    color: white;
-    margin-right: 1rem;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Media Queries for Responsive Design */
-
-/* Large screens (max-width: 1200px) */
-@media only screen and (max-width: 1200px) {
-    .up {
-        padding: 50px 150px;
-    }
-    
-    .up_right {
-        left: 45rem;
-    }
-    
-    .up_right img {
-        width: 24rem;
-    }
-    
-    .hero_heading {
-        font-size: 2.2rem;
-        line-height: 4rem;
-    }
-    
-    .one, .two, .three {
-        width: 22rem;
-    }
-}
-
-/* Medium screens (max-width: 992px) */
-@media only screen and (max-width: 992px) {
-    .up {
-        padding: 50px 80px;
-        flex-direction: column;
-        height: auto;
-    }
-    
-    .up_left {
-        width: 100%;
-        text-align: center;
-    }
-    
-    .up_right {
-        position: static;
-        margin-top: 2rem;
-    }
-    
-    .up_right img {
-        width: 20rem;
-    }
-    
-    .hero_pera {
-        width: 100%;
-        text-align: center;
-    }
-    .down h2{
-        margin-top: -8rem;
-        margin-bottom: 2rem;
-    }
-    .down_img {
-        flex-direction: column;
-        margin-top: -1rem;
-    }
-    
-    .one, .two, .three {
-        width: 80%;
-        padding: 1.5rem 0;
-    }
-    .trick {
-        width: 80%;
-        font-size: 1.5rem;
-    }
-    
-    .pointing {
-        width: 20rem;
-    }
-    
-    .painding_div {
-        left: 50%;
-        transform: translateX(-50%);
-    }
-    
-    #fileUplodeBtn {
-        padding: 60px 90px;
-        font-size: 2.5rem;
-    }
-    
-    .medicine-card {
-        width: 90%;
-    }
-    
-    .result-header {
-        width: 90%;
-        font-size: 3rem;
-    }
-}
-
-/* Small screens (max-width: 768px) */
-@media only screen and (max-width: 768px) {
-    .header_div p {
-        font-size: 1.5rem;
-    }
-    
-    .chikitsAI_logo img {
-        width: 40px;
-    }
-    
-    .login_singupBtn button {
-        font-size: 1rem;
-        padding: 5px 15px;
-    }
-    
-    .header_details > div {
-        width: 80vw;
-    }
-    
-    .up {
-        padding: 30px 40px;
-    }
-    
-    .hero_heading {
-        font-size: 1.8rem;
-        line-height: 3rem;
-        letter-spacing: 0.1rem;
-    }
-    
-    .hero_pera {
-        font-size: 1rem;
-    }
-    
-    .try_it button {
-        padding: 15px 50px;
-        font-size: 1.5rem;
-    }
-    
-    .footer-content {
-        flex-direction: column;
-        height: auto;
-        gap: 1.5rem;
-    }
-    
-    .footer-section {
-        margin-bottom: 1rem;
-    }
-    
-    #fileUplodeBtn {
-        padding: 40px 60px;
-        font-size: 2rem;
-    }
-    
-    .result-header {
-        font-size: 2.5rem;
-    }
-    
-    .medicine-card > h3 {
-        font-size: 2rem;
-    }
-    
-    .medicine-card > p {
-        margin-left: 2rem;
-        font-size: 1rem;
-    }
-}
-
-/* Extra small screens (max-width: 576px) */
-@media only screen and (max-width: 576px) {
-    .header_div p {
-        font-size: 1.2rem;
-    }
-    
-    .chikitsAI_logo img {
-        width: 30px;
-    }
-    
-    .up {
-        padding: 20px 25px;
-    }
-    
-    .hero_heading {
-        font-size: 1.5rem;
-        line-height: 2.5rem;
-    }
-    
-    .try_it button {
-        padding: 10px 30px;
-        font-size: 1.2rem;
-    }
-    
-    .one > p, .two > p, .three > p {
-        font-size: 1rem;
-    }
-    
-    #fileUplodeBtn {
-        padding: 30px 40px;
-        font-size: 1.5rem;
-    }
-    
-    .result-header {
-        font-size: 2rem;
-    }
-    
-    .medicine-card {
-        padding-top: 5rem;
-        height: auto;
-    }
-    
-    .details-h {
-        font-size: 1.3rem;
-    }
-
-}
-
-/* Very small screens (max-width: 400px) */
-@media only screen and (max-width: 400px) {
-    .header_div {
-        justify-content: space-around;
-    }
-    
-
-    
-    .up_right img {
-        width: 15rem;
-    }
-    
-    .hero_heading {
-        font-size: 1.3rem;
-    }
-    
-    .try_it button {
-        padding: 8px 20px;
-        font-size: 1rem;
-    }
-    
-    #fileUplodeBtn {
-        padding: 20px 30px;
-        font-size: 1.2rem;
-    }
-    
-    .result-header {
-        font-size: 1.5rem;
-    }
-    
-    .medicine-card > h3 {
-        font-size: 1.5rem;
-    }
-}           
-
-
-
-@media (max-width:994px) {
-    .container{
-        margin-top: 79rem;
-    }
-
-    .fileUplodeBtn_div{
-    padding-top: 13.9rem;
-}
-
-    .down{
-        height: 50rem;
-    }
-    .down_img{
-        margin-bottom: 20rem;
-    }
-}
+        :root {
+            /* Deep Dark Mode (Default) */
+            --bg: #020617;
+            --card-bg: rgba(15, 23, 42, 0.8);
+            --text-main: #f8fafc;
+            --text-dim: #94a3b8;
+            --intel-blue: #0071C5;
+            --glow: #38bdf8;
+            --border: rgba(255, 255, 255, 0.08);
+            --danger: #ef4444;
+            --success: #22c55e;
+            --gradient: linear-gradient(135deg, #0071C5 0%, #38bdf8 100%);
+        }
+
+        body.light-mode {
+            --bg: #f8fafc;
+            --card-bg: #ffffff;
+            --text-main: #0f172a;
+            --text-dim: #64748b;
+            --border: rgba(0, 0, 0, 0.08);
+            --glow: #0071C5;
+        }
+
+        * {
+            margin: 0; padding: 0; box-sizing: border-box;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        html { scroll-behavior: smooth; }
+
+        body {
+            background-color: var(--bg);
+            color: var(--text-main);
+            transition: background 0.4s ease, color 0.4s ease;
+            overflow-x: hidden;
+            line-height: 1.6;
+        }
+
+        /* --- Navbar --- */
+        nav {
+            position: fixed; top: 0; width: 100%; padding: 15px 5%;
+            display: flex; justify-content: space-between; align-items: center;
+            z-index: 1000; backdrop-filter: blur(15px);
+            border-bottom: 1px solid var(--border);
+        }
+
+        .logo { 
+            font-family: 'Space Grotesk', sans-serif; 
+            font-weight: 700; font-size: 1.4rem; 
+            display: flex; align-items: center; gap: 8px;
+        }
+        .logo i { color: var(--intel-blue); }
+        .logo span { background: var(--gradient); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+
+        .theme-toggle {
+            background: var(--card-bg); border: 1px solid var(--border);
+            color: var(--text-main); padding: 10px 18px; border-radius: 50px;
+            cursor: pointer; font-size: 0.9rem; display: flex; align-items: center; gap: 10px;
+            transition: 0.3s; box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+
+        /* --- Hero Section --- */
+        header {
+            min-height: 100vh; display: flex; flex-direction: column;
+            justify-content: center; align-items: center; text-align: center;
+            padding: 100px 8% 50px; position: relative;
+        }
+
+        .hero-badge {
+            background: rgba(0, 113, 197, 0.1); color: var(--intel-blue);
+            padding: 8px 16px; border-radius: 50px; font-size: 0.8rem;
+            font-weight: 700; margin-bottom: 24px; border: 1px solid rgba(0, 113, 197, 0.2);
+        }
+
+        h1 {
+            font-size: clamp(2.2rem, 8vw, 4.5rem); line-height: 1.1; margin-bottom: 24px;
+            font-family: 'Space Grotesk', sans-serif; font-weight: 700;
+        }
+
+        header p { max-width: 650px; color: var(--text-dim); font-size: 1.1rem; margin-bottom: 40px; }
+
+        .btn-cta {
+            background: var(--gradient); color: white; padding: 18px 45px;
+            border-radius: 14px; text-decoration: none; font-weight: 700;
+            box-shadow: 0 20px 40px rgba(0, 113, 197, 0.3); transition: 0.3s;
+        }
+        .btn-cta:hover { transform: translateY(-3px); box-shadow: 0 25px 50px rgba(0, 113, 197, 0.5); }
+
+        /* --- Bento Grid Benefits --- */
+        .section { padding: 80px 8%; }
+        .bento-grid {
+            display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px;
+        }
+        .bento-card {
+            background: var(--card-bg); border: 1px solid var(--border);
+            padding: 35px; border-radius: 28px; transition: 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+        .bento-card:hover { transform: translateY(-10px); border-color: var(--glow); }
+        .bento-card i { font-size: 2.2rem; color: var(--glow); margin-bottom: 20px; }
+        .bento-card h3 { margin-bottom: 12px; font-size: 1.3rem; }
+
+        /* --- Interactive Scanner --- */
+        .scanner-container {
+            max-width: 800px; margin: 40px auto; background: var(--card-bg);
+            border-radius: 35px; padding: 40px; border: 1px solid var(--border);
+            box-shadow: 0 40px 80px rgba(0,0,0,0.3); position: relative;
+        }
+
+        .drop-zone {
+            width: 100%; height: 320px; border: 2px dashed var(--border);
+            border-radius: 24px; display: flex; flex-direction: column;
+            justify-content: center; align-items: center; cursor: pointer;
+            transition: 0.3s; position: relative; overflow: hidden;
+        }
+        .drop-zone:hover { background: rgba(56, 189, 248, 0.05); border-color: var(--glow); }
+
+        .scan-anim-line {
+            position: absolute; top: 0; left: 0; width: 100%; height: 4px;
+            background: var(--glow); box-shadow: 0 0 20px var(--glow);
+            z-index: 10; display: none; animation: scanMove 2s infinite linear;
+        }
+        @keyframes scanMove { 0% { top: 0; } 100% { top: 100%; } }
+
+        #analyze-btn {
+            display: none; width: 100%; margin-top: 25px; background: var(--text-main);
+            color: var(--bg); border: none; padding: 18px; border-radius: 12px;
+            font-weight: 800; cursor: pointer; font-size: 1rem; transition: 0.3s;
+        }
+
+        /* --- Results Styling --- */
+        #results-grid { margin-top: 40px; display: grid; gap: 20px; }
+        .med-result-card {
+            background: var(--card-bg); padding: 25px; border-radius: 20px;
+            border: 1px solid var(--border); animation: fadeIn 0.6s ease-out forwards;
+            border-left: 6px solid var(--glow);
+        }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+
+        .safety-badge {
+            display: inline-flex; align-items: center; gap: 8px;
+            background: rgba(239, 68, 68, 0.1); color: var(--danger);
+            padding: 8px 14px; border-radius: 8px; font-size: 0.85rem; font-weight: 600; margin-top: 15px;
+        }
+
+        /* --- Human Touch / Pharmacist Tip --- */
+        .pharmacist-tip {
+            margin-top: 60px; background: var(--gradient); color: white;
+            padding: 30px; border-radius: 25px; display: flex; align-items: center;
+            gap: 20px; flex-wrap: wrap; box-shadow: 0 20px 40px rgba(0,113,197,0.2);
+        }
+        .pharmacist-tip i { font-size: 2.5rem; }
+
+        /* --- Responsive Adjustments --- */
+        @media (max-width: 768px) {
+            nav { padding: 15px 5%; }
+            .theme-toggle span { display: none; }
+            header { padding-top: 140px; }
+            h1 { font-size: 2.4rem; }
+            .scanner-container { padding: 20px; margin: 20px; }
+            .drop-zone { height: 280px; }
+            .bento-grid { grid-template-columns: 1fr; }
+            .pharmacist-tip { text-align: center; justify-content: center; }
+        }
+
+        footer {
+            padding: 60px 8%; text-align: center; border-top: 1px solid var(--border);
+            color: var(--text-dim); font-size: 0.9rem;
+        }
+  

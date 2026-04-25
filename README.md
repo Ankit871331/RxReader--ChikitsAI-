@@ -1,64 +1,96 @@
-# 🧠 ChikitsAI – Rx Reader
+🧠 ChikitsAI – Rx Reader
 
 🔗 Live Demo: https://chikits-ai.netlify.app/
 
-🖼️ Project Preview:  
-![alt text](review.png)
+🚀 Overview
 
----
+ChikitsAI Rx Reader is a real-world problem-solving web app that converts handwritten medical prescriptions into readable digital text using OCR.
 
-## About the Project
+Anyone who has dealt with prescriptions knows the struggle — unclear handwriting leads to confusion. This project aims to make prescriptions accessible, readable, and understandable for everyone.
 
-ChikitsAI Rx Reader is a simple tool I built to help people understand handwritten medical prescriptions.  
-Many times prescriptions are hard to read, so this project tries to convert them into clear, readable text using OCR.
+⚠️ Not a replacement for doctors — a support tool for clarity.
 
-It’s not a medical replacement, just a helper to make things easier for users.
+📸 Screenshots
 
----
+(Add your project images here — save inside /assets or /images folder)
 
-## What it does
+![Upload Screen](./assets/upload.png)
+![Processing](./assets/processing.png)
+![Output Result](./assets/output.png)
+🎥 Demo
 
-- Upload or capture a prescription image  
-- Extracts text using OCR (Tesseract.js)  
-- Cleans and formats the extracted text  
-- Shows readable output in a simple UI  
-- Reminds users to consult a doctor or pharmacist  
+(Create a short GIF using Screen Recorder + ezgif.com or ScreenToGif)
 
----
+![Demo GIF](./assets/demo.gif)
+🎯 Problem
+Doctors’ handwriting is often hard to read
+Patients may misunderstand medicines or dosage
+Leads to confusion and potential misuse
+💡 Solution
 
-## Tech Stack
+ChikitsAI simplifies prescriptions by:
 
-- HTML  
-- CSS  
-- JavaScript  
-- Tesseract.js  
-- Netlify (deployment)  
+📸 Uploading prescription images
+🔍 Extracting text using OCR
+🧹 Cleaning and structuring output
+📄 Showing readable results
+⚠️ Adding safety reminders
+🛠️ Tech Stack
+HTML
+CSS
+JavaScript
+🔎 Tesseract.js
+🚀 Netlify
+✨ Features
+Clean and minimal UI
+Browser-based OCR (no backend needed)
+Quick text extraction
+Beginner-friendly architecture
+Real-world use case
+🧠 Challenges Faced (Important Section)
 
----
+This is where most projects fail — yours won’t.
 
-## Why I built this
+1. OCR Accuracy Issues
+Handwritten prescriptions are inconsistent
+OCR often gives noisy or incorrect output
 
-I wanted to build something practical that solves a real-world problem.  
-Reading prescriptions is difficult for many people, so I combined OCR with frontend development to make a basic solution for it.
+👉 Solution: Applied text cleaning logic and formatting to improve readability.
 
----
+2. Image Quality Variations
+Blurry, low-light, or tilted images affected results
 
-## Important Note
+👉 Solution: Guided users to upload clearer images and optimized preprocessing.
 
-This tool is only for learning and informational purposes.  
-It should not be used as a medical decision system.
+3. Medicine Recognition Limitation
+OCR extracts text, but doesn’t understand medicine names
 
----
+👉 Solution: Planned future integration with a drug database + AI model
 
-## Future Improvements
+4. Performance in Browser
+Running OCR in frontend can be slow
 
-- Better AI-based medicine recognition  
-- Drug information database integration  
-- Mobile app version  
-- Multi-language support  
+👉 Solution: Optimized workflow and kept UI responsive during processing.
 
----
+🔮 Future Improvements
+🤖 AI-based medicine recognition
+💊 Drug database integration
+📱 React Native mobile app
+🌍 Multi-language OCR support
+🧾 Structured prescription parsing
+🏆 Achievement
 
-## Live Link
+Built during Intel Unnati Industrial Training, focusing on solving real-world healthcare accessibility problems.
+
+⚠️ Disclaimer
+Not a medical tool
+Not 100% accurate
+Always verify with a doctor or pharmacist
+👨‍💻 Author
+
+Ankit
+Aspiring Java Developer | AI Enthusiast
+
+🔗 Live Project
 
 👉 https://chikits-ai.netlify.app/

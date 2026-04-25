@@ -14,9 +14,8 @@ Anyone who has dealt with prescriptions knows the struggle — unclear handwriti
 
 (Add your project images here — save inside /assets or /images folder)
 
-![Upload Screen](./assets/upload.png)
-![Processing](./assets/processing.png)
-![Output Result](./assets/output.png)
+![alt text](review.png)
+![alt text](scanPrescription.png)
 🎥 Demo
 
 (Create a short GIF using Screen Recorder + ezgif.com or ScreenToGif)

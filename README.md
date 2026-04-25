@@ -12,15 +12,14 @@ Anyone who has dealt with prescriptions knows the struggle — unclear handwriti
 
 📸 Screenshots
 
-(Add your project images here — save inside /assets or /images folder)
 
 ![alt text](review.png)
 ![alt text](scanPrescription.png)
 🎥 Demo
 
-(Create a short GIF using Screen Recorder + ezgif.com or ScreenToGif)
 
-![Demo GIF](./assets/demo.gif)
+![alt text](ChikitsaiGIF.gif)
+
 🎯 Problem
 Doctors’ handwriting is often hard to read
 Patients may misunderstand medicines or dosage

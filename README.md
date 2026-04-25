@@ -37,7 +37,6 @@ ChikitsAI simplifies prescriptions by:
 HTML
 CSS
 JavaScript
-🔎 Tesseract.js
 🚀 Netlify
 ✨ Features
 Clean and minimal UI
@@ -47,7 +46,6 @@ Beginner-friendly architecture
 Real-world use case
 🧠 Challenges Faced (Important Section)
 
-This is where most projects fail — yours won’t.
 
 1. OCR Accuracy Issues
 Handwritten prescriptions are inconsistent

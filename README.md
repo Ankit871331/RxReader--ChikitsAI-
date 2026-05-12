@@ -1,5 +1,5 @@
 🧠 ChikitsAI – Rx Reader
-
+**Currently converting in to java based project**
 🔗 Live Demo: https://chikits-ai.netlify.app/
 
 🚀 Overview
